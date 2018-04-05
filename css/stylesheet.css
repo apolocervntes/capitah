@@ -1,0 +1,142 @@
+@import url(https://fonts.googleapis.com/css?family=Allan);
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans);
+p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+    font: 400 20px 'Droid Sans', sans-serif;
+	  background-color: #fff;
+	  color: #c0c5ce;
+  margin: 2.5em;
+  background-color: white;
+  line-height: 1;
+
+ }
+
+  header{ background: #fff;
+      position: static;
+      margin: 0;
+      padding: 0 5px 0;
+      border: 0;
+      text-align: center;
+  }
+
+  header ul.nav{ overflow: hidden;
+  }
+  header ul.nav li{
+      position: static;
+      float: left;
+      width:20%;
+      margin-bottom:15px;
+       list-style: none;
+
+  }
+header ul.nav li a{
+    display:inline-block;
+    height: 50px;
+    opacity: 100;
+    font: 400 1.15em "Allan", sherif ;
+    line-height: 50px;
+    text-decoration: none;
+    color: black;
+    line-height: 125px;
+    padding-left: 15px;
+     list-style: none;
+}
+button {
+    display: inline-block;
+    line-height: 8px;
+    padding: 0 5px;
+    margin: 11px 2% 11px 0;
+    float: right;
+    width: 0%;
+}
+.logo {
+  background-color: white;
+  font-size: 2.15em;
+  text-decoration: underline overline #19a8e3;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: line;
+  font-style: normal;
+}
+
+section {
+  text-transform: uppercase;
+  text-align: center;
+  font-style: italic;
+}
+  section a:link {
+    font-style: normal;
+    color: #000000;
+    text-decoration: none; }
+  section a:visited {
+      font-style: italic;
+    color: #000000;
+    text-decoration: none; }
+  section a:hover {
+      font-style: italic;
+    color: #3366CC;
+    text-decoration: underline; }
+  section a:active {
+    color: #000000;
+    text-decoration: none; }
+
+footer {
+  border-color: #19a8e3;
+  border-style: dotted;
+  text-align: center; }
+  footer h1 {
+    font-style: oblique; }
+    .loud{
+	  text-transform: uppercase;
+}
+section{
+  padding: 0em;
+}
+h1{
+  margin: 0.5em 0;
+  font-size: 40px;
+  line-height: 1.25em;
+}
+p{
+  margin: 0.25em 0;
+}
+strong{
+  color: rgb(126, 126, 126);
+  text-decoration: none;
+}
+
+@media (max-width: 568px) {
+
+#menu ul {
+    display:none;
+}
+
+}
+@media (max-width: 560px) {
+#navbar select, #navbar ul {
+        display: none;
+    }
+}
+
+
+
+/*# sourceMappingURL=stylesheet.css.map */
