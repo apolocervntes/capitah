@@ -19,7 +19,6 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-
 body {
     font: 400 20px 'Droid Sans', sans-serif;
 	  background-color: #fff;
@@ -60,14 +59,6 @@ header ul.nav li a{
     padding-left: 15px;
      list-style: none;
 }
-button {
-    display: inline-block;
-    line-height: 8px;
-    padding: 0 5px;
-    margin: 11px 2% 11px 0;
-    float: right;
-    width: 0%;
-}
 .logo {
   background-color: white;
   font-size: 2.15em;
@@ -99,7 +90,9 @@ section {
     color: #000000;
     text-decoration: none; }
 
-footer {
+footer { display: block;
+	padding: 0%;
+	overflow: hidden;
   border-color: #19a8e3;
   border-style: dotted;
   text-align: center; }
@@ -108,22 +101,52 @@ footer {
     .loud{
 	  text-transform: uppercase;
 }
-section{
-  padding: 0em;
+section #centro{
+  padding: 0.25em;
+
 }
-h1{
+
   margin: 0.5em 0;
   font-size: 40px;
   line-height: 1.25em;
 }
+main{
+	max-width: 1000px;
+
+
+}
+.articles{
+	width: 70%;
+	float: left;
+	padding: none;
+	background-color:#fff;
+}
+aside{
+	width: 30%;
+}
+article{
+	padding: 15%;
+}
 p{
+	font-family: sans-serif;
   margin: 0.25em 0;
 }
 strong{
   color: rgb(126, 126, 126);
   text-decoration: none;
 }
+.copy{
+	font-size: 15px;
+}
 
+.imagen{
+	height: 20%;
+	align-items: center;
+	display:inline-block;
+	/*Y*/
+}
+h1,h2,h3{
+	font-family: Droid-sans  serif;
 @media (max-width: 568px) {
 
 #menu ul {
