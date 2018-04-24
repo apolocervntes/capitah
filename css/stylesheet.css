@@ -320,4 +320,12 @@ h1,h2,h3{
 .circular-menu.active .menu-item:nth-child(4) {
   transform: translate3d(-7em,1em,0);
   }
+	.terminal{
+		font-size: 3em;
+		margin-top:5%;
+	}
+	#terminal a:hover {
+      font-style: normal;
+    color: #000000;
+    text-decoration: none; }
 /*# sourceMappingURL=stylesheet.css.map */
