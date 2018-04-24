@@ -1,17 +1,10 @@
+/* youre not expected to understadn this */
+$azul
 @import url(https://fonts.googleapis.com/css?family=Allan);
 @import url(https://fonts.googleapis.com/css?family=Droid+Sans);
+@import url(https://fonts.googleapis.com/css?family=Allan);
 p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+{
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -21,15 +14,14 @@ time, mark, audio, video {
 }
 body {
     font: 400 20px 'Droid Sans', sans-serif;
-	  background-color: #fff;
+	  background-color: #e0f9fc;
 	  color: #c0c5ce;
   margin: 2.5em;
-  background-color: white;
+  background-color: #e0f9fc;
   line-height: 1;
 
  }
-
-  header{ background: #fff;
+  header{ background: #e0f9fc;
       position: static;
       margin: 0;
       padding: 0 5px 0;
@@ -60,13 +52,15 @@ header ul.nav li a{
      list-style: none;
 }
 .logo {
-  background-color: white;
+  line-height: 200%;
+  background-color: #e0f9fc;
   font-size: 2.15em;
   text-decoration: underline overline #19a8e3;
   text-align: center;
   text-transform: uppercase;
   white-space: line;
   font-style: normal;
+  font-family: 'Allan', cursive;
 }
 
 section {
@@ -90,8 +84,12 @@ section {
     color: #000000;
     text-decoration: none; }
 
-footer { display: block;
-	padding: 0%;
+footer {
+	background-color:#e0f9fc;
+	display: block;
+  vertical-align: bottom;
+  margin-top: 25%;
+	padding:none;
 	overflow: hidden;
   border-color: #19a8e3;
   border-style: dotted;
@@ -103,29 +101,39 @@ footer { display: block;
 }
 section #centro{
   padding: 0.25em;
-
-}
-
   margin: 0.5em 0;
   font-size: 40px;
   line-height: 1.25em;
+
+}
+span{
+	display: inline-block;
+	padding: 3%;
+	border-style: dotted;
+	border-color: #19a8e3;
 }
 main{
+  margin-top: 100%;
+  display: inline-block;
+  border-style: dotted;
 	max-width: 1000px;
-
-
 }
 .articles{
-	width: 70%;
+ margin: 0%;
+  width: 60%;
 	float: left;
 	padding: none;
-	background-color:#fff;
+  background-color:#e0f9fc;
+
 }
 aside{
-	width: 30%;
+	width: 0%;
 }
 article{
-	padding: 15%;
+ display: inline-block;
+ margin: none;
+  padding:25%;
+	overflow: hidden;
 }
 p{
 	font-family: sans-serif;
@@ -137,17 +145,72 @@ strong{
 }
 .copy{
 	font-size: 15px;
+	background: #e0f9fc;
 }
-
+.ad {
+ margin-top: 14%;
+ overflow: hidden;
+ padding: 3%;
+}
 .imagen{
 	height: 20%;
 	align-items: center;
 	display:inline-block;
-	/*Y*/
+	/*(.Y.)*/
 }
+section #bajo{
+	margin-top: 20%;
+	padding:0%;
+}
+.container {
+    position: relative;
+    width: 25%;
+		margin-top: auto;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 50%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+	border-radius: 100%;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+	border-radius: 20%;
+  background-color: #beecf1;
+  color: white;
+  font-size: 16px;
+  padding: 12% 25%;
+
+}
+
 h1,h2,h3{
-	font-family: Droid-sans  serif;
-@media (max-width: 568px) {
+  font-style: italic;
+  	font-family: Allan Droid-sans  serif;
+@media (max-width: 568px)}
 
 #menu ul {
     display:none;
@@ -160,6 +223,101 @@ h1,h2,h3{
     }
 }
 
+.circular-menu {
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+}
+.circular-menu .floating-btn {
+  display: block;
+  width: 3.5em;
+  height: 3.5em;
+  border-radius: 50%;
+  background-color: #19a8e3;
+  box-shadow: 0 2px 5px 0 hsla(0, 0%, 0%, .26);
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  line-height: 3.9;
+  cursor: pointer;
+  outline: 0;
+  }
 
+.circular-menu.active .floating-btn {box-shadow: inset 0 0 3px hsla(0, 0%, 0%, .3);}
 
+.circular-menu .floating-btn:active {box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, .4);}
+
+.circular-menu .floating-btn i {
+  font-size: 1.3em;
+  transition: transform .2s;
+  }
+
+.circular-menu.active .floating-btn i {
+  transform: rotate(-45deg);
+  }
+
+.circular-menu:after {
+  display: block;
+  content: ' ';
+  width: 3.5em;
+  height: 3.5em;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -2;
+  background-color: #19a8e3);
+  transition: all .3s ease;
+  }
+
+.circular-menu.active:after {
+  transform: scale3d(5.5, 5.5, 1);
+  transition-timing-function: cubic-bezier(.68, 1.55, .265, 1);
+  }
+
+.circular-menu .items-wrapper {
+  padding: 0;
+  margin: 0;
+  }
+
+.circular-menu .menu-item {
+  position: absolute;
+  top: .2em;
+  right: .2em;
+  z-index: -1;
+  display: block;
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  font-size: 1em;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 3;
+  background-color: #19a8e3;
+  transition: transform .3s ease, background .2s ease;
+  }
+
+.circular-menu .menu-item:hover {
+  background-color: #19a8e3;
+  }
+
+.circular-menu.active .menu-item {
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+.circular-menu.active .menu-item:nth-child(1) {
+  transform: translate3d(1em,-7em,0);
+  }
+
+.circular-menu.active .menu-item:nth-child(2) {
+  transform: translate3d(-3.5em,-6.3em,0);
+  }
+
+.circular-menu.active .menu-item:nth-child(3) {
+  transform: translate3d(-6.5em,-3.2em,0);
+  }
+
+.circular-menu.active .menu-item:nth-child(4) {
+  transform: translate3d(-7em,1em,0);
+  }
 /*# sourceMappingURL=stylesheet.css.map */
