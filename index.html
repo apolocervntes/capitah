@@ -1,46 +1,39 @@
-body{
- background-color: slategray;
-}
-h1 {
-    color :#ff0000;
-    border:2px solid red;
-   }
-   /* this is a coment  */
-   ul {
-     color: #000;
-   }
-   li{
-    border:2px solid rgb(146, 255, 152) ;
-     color:rgb(146, 255, 152);
-     background-color:tan;
-   }
-#firstli{
-  background-color:royalblue;
-}
-.highligth{
-  text-decoration-line: line-through ;
-  background-color: tomato;
-}
-   /* 
-   slector{
-     property: value;
-   }
-   .class 
-   #id
-   
-   */
-    /*buttons*/
-#fox{
-font-size :100px;
-border:0;
-padding:0;
-background-color: inherit;
-overflow: hidden;
-text-transform: none;
--webkit-appearance: none;
-}
-#fox:hover, 
-#fox:focus{
-transition-duration: 0.15s;
- transform: scale(1.2);
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+</head>
+<body>
+    <h1>this is css</h1>
+    <h4>this is a h4</h4>
+    <form action="">
+        <ul>
+            <li id="firstli">this are list elements <input type="checkbox"> </li>
+             
+             <li id="secondli">this are list elements <input type="checkbox"> </li>
+             
+             <li class="highligth" >this are list elements <input type="checkbox"> </li>
+             
+             <li class="highligth" >this are list elements <input type="checkbox"> </li>     
+             
+             <button type="reset">reset</button> 
+             
+             <button  type="submit">submit</button>
+             <!-- auto focus to make it selectable by default -->
+            
+         <button id="fox" type="reset">
+            <span role="img" aria-label="Fox">
+              🦊
+            </span>
+         </button>
+         </ul>
+        
+        </form>
+        <div>
+
+        </div>
+</body>
+</html>             
